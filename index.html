@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rinterio Websiite</title>
+  <!-- Css link -->
   <link rel="stylesheet" href="styles/style.css">
+  <!-- Daisy ui+ TailwindCss CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome link -->
+  <script src="https://kit.fontawesome.com/03080cf954.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <!-- Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body>
-  
+  <header>
+    <!-- nav section -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start w-full justify-between lg:w-6/12 md:w-6/12">
+        <!-- Logo Style -->
+        <div>
+          <h4 class="text-3xl font-extrabold flex justify-center items-center gap-x-2"> <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] p-3 rounded-[32px]"></i>
+            Rinterio</h4>
+        </div>
+        
+      </div>
+      <!-- Desktop Nevigation Menu -->
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- button and icons -->
+      <div class="navbar-end hidden lg:flex md:flex items-center justify-center gap-x-3">
+        <i class="fa-solid fa-magnifying-glass p-2 rounded-[56px] bg-[#E9E9E9]"></i>
+        <i class="fa-solid fa-cart-shopping p-2 rounded-full bg-[#E9E9E9]"></i>
+        <button class="button px-3 py-2 flex items-center justify-center gap-x-2">Book Consult <i
+            class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-3 rounded-[32px]"></i>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="">Contact Us</a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </header>
+  <main></main>
+  <footer></footer>
 </body>
+
 </html>
