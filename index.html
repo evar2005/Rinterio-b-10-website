@@ -31,56 +31,81 @@
 </head>
 
 <body>
-  <header>
-    <!-- nav section -->
-    <div class="navbar bg-base-100">
-      <div class="navbar-start w-full justify-between lg:w-6/12 md:w-6/12">
-        <!-- Logo Style -->
-        <div>
-          <h4 class="text-3xl font-extrabold flex justify-center items-center gap-x-2"> <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] p-3 rounded-[32px]"></i>
-            Rinterio</h4>
+  <section class="max-w-[1440px] mx-auto">
+    <!-- header section -->
+    <header class="w-[93%] lg:w-[81%] mx-auto my-5">
+      <!-- nav section -->
+      <div class="flex items-center justify-center bg-base-100">
+        <!-- Logo -->
+        <div class="flex-1">
+          <h4 class="text-3xl font-extrabold flex items-center gap-x-2">
+            <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-[32px]"></i> Rinterio
+          </h4>
         </div>
-        
-      </div>
-      <!-- Desktop Nevigation Menu -->
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a href="">Home</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Blogs</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
-      </div>
-      <!-- button and icons -->
-      <div class="navbar-end hidden lg:flex md:flex items-center justify-center gap-x-3">
-        <i class="fa-solid fa-magnifying-glass p-2 rounded-[56px] bg-[#E9E9E9]"></i>
-        <i class="fa-solid fa-cart-shopping p-2 rounded-full bg-[#E9E9E9]"></i>
-        <button class="button px-3 py-2 flex items-center justify-center gap-x-2">Book Consult <i
-            class="fa-solid fa-arrow-right -rotate-45 bg-black text-white p-3 rounded-[32px]"></i>
-        </button>
-      </div>
-      <!-- Mobile Menu -->
-      <div class="dropdown">
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-          </svg>
+        <!-- desktop Menu -->
+        <div class="grow-1 hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
         </div>
-        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-          <li><a href="">Home</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Blogs</a></li>
-          <li><a href="">Contact Us</a></li>
-        </ul>
+        <!-- button styles -->
+        <div class="flex-1 hidden md:flex lg:flex items-center gap-x-3 justify-end w-auto">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <button class="button px-3 py-2 flex items-center gap-x-2">Book Consult
+            <i class="fa-solid fa-arrow-right -rotate-45 bg-black text-white rounded-[32px]"></i>
+          </button>
+        </div>
+        <!-- mobile menu -->
+        <div class="dropdown lg:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-auto p-2 shadow right-12">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
-      
-    </div>
-  </header>
-  <main></main>
-  <footer></footer>
+      <!-- banner section -->
+      <section class="my-8">
+        <div class="container flex flex-col items-center justify-center gap-6">
+          <!-- Banner images -->
+          <div>
+            <img src="./assets/banner.png" alt="Banner Img" class="w-full h-auto object-cover">
+          </div>
+          <!-- Banner Title -->
+          <div class="hero-title text-center">
+            <h2 class="title font-extrabold text-4xl md:text-5xl lg:text-6xl">A barn house of this design has a striking
+              appearance</h2>
+            <p class="sub-title">The barn house captivates with its blend of rustic charm and modern sophistication,
+              featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+            </p>
+            <!-- button styles -->
+
+            <button class="button px-3 py-2 flex items-center gap-x-2 bg-[#ABEF5F] bg-opacity-45 mx-auto mt-5">View Details
+              <i class="fa-solid fa-arrow-right -rotate-45 rounded-[32px] bg-[#ABEF5F]"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- main section -->
+    <main></main>
+    <!-- footer section -->
+    <footer></footer>
+  </section>
 </body>
 
 </html>

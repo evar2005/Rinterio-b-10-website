@@ -18,7 +18,9 @@ body{
   --sub-title-font-weight: 500;
   --title-font-weight: 700;
   --some-title-font-weight: 800;
+  --icon-background: #E9E9E9;
 }
+/* navbar a */
 a {
   color: var(--sub-title-color);
   font-weight: var(--some-title-font-weight);
@@ -27,9 +29,29 @@ a {
 a:hover{
   font-weight: 400;
 }
+/* header button */
 .button{
   font-size: var(--card-title-font-size);
   font-weight: var(--some-title-font-weight);
   background-color: var(--btn-color);
   border-radius: 2rem;
+}
+/* all title */
+.title{
+  color: var(--title-color);
+}
+.hero-title{
+  line-height: 30px;
+}
+/* all sub-title */
+.sub-title{
+  font-weight: var(--sub-title-font-weight);
+  font-size: var(--sub-title-font-size);
+  color: var(--sub-title-color);
+  margin-top: 20px;
+}
+i{
+  background-color: var(--icon-background);
+  border-radius: 100%;
+  padding: 8px;
 }
